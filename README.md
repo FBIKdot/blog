@@ -1,5 +1,3 @@
-# LumeProse
+# My Blog
 
-[Lume🔥](https://lume.land) + [prose.sh~](https://prose.sh) = LumeProse 🔥~
-
-A blog, powered bt Lume, using template and style from prose.sh
+Generated from [LumeProse](https://github.com/FBIKdot/LumeProse).
