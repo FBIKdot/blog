@@ -1,7 +1,18 @@
 import Base from "./base.page.tsx";
 
 export default (
-  { content, title, date, tags, description, footer, update, icon }: Lume.Data,
+  {
+    content,
+    title,
+    date,
+    tags,
+    description,
+    footer,
+    update,
+    icon,
+    author,
+    site,
+  }: Lume.Data,
   helpers: Lume.Helpers,
 ) => (
   <Base title={title || "title"} isPost={true} icon={icon}>
@@ -14,7 +25,7 @@ export default (
           {helpers.date(date)}
         </time>
         <span>{" "}&middot;{" "}</span>
-        <a href="/">FBIK.</a>
+        <a href={site || "/"}>{author || "Anonymous"}</a>
       </p>
       {description && description !== "" && (
         <blockquote>{description}</blockquote>
